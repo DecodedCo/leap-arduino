@@ -1,6 +1,6 @@
 # Leapmotion + Arduino
 
-Getting leapmotion to talk to arduino. 
+Getting leapmotion to talk to arduino.
 
 Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6437```. Node.js can parse this. There is also a Node.js library for talking to Arduino called Johnny-five. You need something called StandardFirmata which standardises commands sent between the Arduino and a host computer, which Johnny-five speaks.
 
@@ -25,11 +25,16 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 
 1. Run ``node leap-arduino.js``
 2. Placing two hands above leap will switch built-in LED on pin 13 on, otherwise off.
-3. Sit-back and think of the possibilities!
+
+## 5. Leapmotion + Servo (via Arduino and Node.js)
+
+1. Wire up a servo to pin 9.
+2. Run ```node servo.js```.
+3. Tweak ranges in code if need (servo and leap).
 
 ## Resources
 
 * [Johnny-five API](https://github.com/rwaldron/johnny-five/wiki)
-* [Leapmotion frame API](https://developer.leapmotion.com/documentation/cpp/devguide/Leap_Frames.html)
+* [Leapmotion API](https://developer.leapmotion.com/documentation/cpp/api/Leap_Classes.html)
 * [Robotic hand demo](http://www.instructables.com/id/Robotic-Hand-controlled-by-Gesture-with-Arduino-Le/)
 * [Robotic lamp demo](http://xseignard.github.io/2013/06/25/interfacing-leap-motion-with-arduino-thanks-to-nodejs/)
