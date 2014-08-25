@@ -1,7 +1,8 @@
 # Leapmotion + Arduino
 
+Getting leapmotion to talk to arduino. 
 
-Getting leapmotion to talk to arduino.
+Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6437```. Node.js can parse this. There is also a Node.js library for talking to Arduino called Johnny-five. You need something called StandardFirmata which standardises commands sent between the Arduino and a host computer, which Johnny-five speaks.
 
 ## 1. Setup
 
@@ -19,6 +20,10 @@ Getting leapmotion to talk to arduino.
 1. Flash the Arduino with [StandardFirmata](http://arduino.cc/en/reference/firmata):
 	![Install StandardFirmata](http://git.decoded.co/amadeuspzs/leapmotion-arduino/raw/master/docs/arduino_firmata.png "Install StandardFirmata")
 2. Run ``node arduino.js``
+
+## 4. Arduino + Leapmotion via Node.js
+
+1. Run ``node leap-arduino.js``
 
 ## Resources
 
