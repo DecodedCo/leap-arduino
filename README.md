@@ -31,7 +31,8 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 
 1. Wire up a servo to pin 9.
 2. Run ```node servo.js```.
-3. Tweak ranges in code if need (servo and leap).
+3. Tweak ranges in code if need (servo and leap). Here is a demo video:
+	[![Leap Servo demo](http://img.youtube.com/vi/DMbuZKZWZlk/0.jpg)](https://www.youtube.com/watch?v=DMbuZKZWZlk)
 
 ## Resources
 
