@@ -6,6 +6,7 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 
 ## 1. Setup
 
+1. Install [nodejs](http://www.nodejs.org/)
 1. Run ``npm install``
 
 ## 2. Leapmotion + Node.js
