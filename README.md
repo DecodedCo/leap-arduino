@@ -23,7 +23,7 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 
 ## 4. Arduino + Leapmotion via Node.js
 
-1. Run ``node leap-arduino.js``
+1. Run ``node leap-arduino.js`` (ref [@xavier_seignard](http://xseignard.github.io/2013/06/25/interfacing-leap-motion-with-arduino-thanks-to-nodejs/))
 2. Placing two hands above leap will switch built-in LED on pin 13 on, otherwise off.
 
 ## 5. Leapmotion + Servo (via Arduino and Node.js)
