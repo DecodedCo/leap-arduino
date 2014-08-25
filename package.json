@@ -13,6 +13,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "johnny-five": "^0.8.8",
     "ws": "^0.4.32"
   }
 }
