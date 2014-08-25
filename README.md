@@ -1,4 +1,4 @@
-leapmotion-arduino
+Leapmotion + Arduino
 ==================
 
-Getting leapmotion to talk to arduino
+Getting leapmotion to talk to arduino.
