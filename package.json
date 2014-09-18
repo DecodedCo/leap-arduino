@@ -14,6 +14,7 @@
   "license": "ISC",
   "dependencies": {
     "johnny-five": "^0.8.8",
+    "serialport": "^1.4.6",
     "ws": "^0.4.32"
   }
 }
