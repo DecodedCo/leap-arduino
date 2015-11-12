@@ -44,6 +44,13 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 3. Tweak ranges in code if need (servo and leap). Here is a demo video:
 	[![Leap Servo demo](http://img.youtube.com/vi/DMbuZKZWZlk/0.jpg)](https://www.youtube.com/watch?v=DMbuZKZWZlk)
 
+## 7. Leapmotion + 6 Servos
+
+Tested using 6 degrees of freedom robot arm from: http://www.lynxmotion.com/c-130-al5d.aspx
+
+1. Open ``six-servos.js`` and adjust parameters
+2. Run ``node six-servos.js``
+
 ## Resources
 
 * [Johnny-five API](https://github.com/rwaldron/johnny-five/wiki)
