@@ -4,6 +4,8 @@ Getting leapmotion to talk to arduino.
 
 Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6437```. Node.js can parse this. There is also a Node.js library for talking to Arduino called Johnny-five. You need something called StandardFirmata which standardises commands sent between the Arduino and a host computer, which Johnny-five speaks.
 
+**Note: the `serialport` library only works with node 0.12.x**
+
 ## 1. Setup
 
 1. Install [nodejs](http://www.nodejs.org/)
@@ -29,7 +31,13 @@ Top level: Leapmotion makes data available via websockets on ```ws://127.0.0.1:6
 3. Run ``node leap-gestures.js``
 4. You should see console output for a Screen Tap, Key Tap, Circle and Swipe.
 
-## 5. Leapmotion + Servo (via Arduino and Node.js)
+## 5. Detecting valid ranges from your Leapmotion
+
+1. Run ``node leap-range.js``
+2. Move both hands around for a while in all directions
+3. Stop program when you stop seeing changes. The final values are the min and max ranges (in mm) of your current setup.
+
+## 6. Leapmotion + Servo (via Arduino and Node.js)
 
 1. Wire up a servo to pin 9.
 2. Run ```node servo.js```.
