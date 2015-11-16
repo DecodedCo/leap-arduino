@@ -6,7 +6,7 @@ var webSocket = require('ws'),
     five = require('johnny-five'),
     board = new five.Board(),
     // mm range of leap motion to use, see leap-range.js to find
-    leap_range = [-350,250], // x of right hand
+    leap_range = [-100,100], // x of right hand
     frame, palm;
 
 // parse the data and respond
@@ -28,7 +28,7 @@ board.on('ready', function() {
             palm = frame.hands[0].palmPosition;
             // map x position of leap to servo
             //console.log("input",palm[0]);
-            //console.log("output", palm[0].map())
+            console.log("output", palm[0].map())
             servo.to(palm[0].map());
         }
     });
@@ -41,5 +41,7 @@ Number.prototype.map = function () {
   // check output is within range, or cap
   output = (output > servo.range[1]) ? servo.range[1] : output;
   output = (output < servo.range[0]) ? servo.range[0] : output;
+  // is the servo range reversed? uncomment below
+  output = servo.range[1] - output;
   return output;
 }

@@ -4,21 +4,21 @@
 
 leap_ranges = Array(
   Array(
-    Array(-150,200),
-    Array(50,350),
-    Array(-100,200)
+    Array(-250,100),
+    Array(70,550),
+    Array(-100,250)
     ),
   Array(
-    Array(-225,200),
-    Array(40,380),
-    Array(-100,175)
+    Array(-350,270),
+    Array(40,550),
+    Array(-80,250)
     )
   );
 
 servo_ranges = Array(
   Array(
     Array(0,179),
-    Array(50,150),
+    Array(0,179),
     Array(0,179)
     ),
   Array(

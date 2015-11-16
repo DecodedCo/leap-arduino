@@ -10,7 +10,7 @@ board.on('ready', function() {
     led = new five.Led(13);
     ws.on('message', function(data, flags) {
         frame = JSON.parse(data);
-        if (frame.hands && frame.hands.length >= 1) {
+        if (frame.hands && frame.hands.length == 1) {
             led.on();
         } else {
             led.off();
