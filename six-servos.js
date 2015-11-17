@@ -4,14 +4,14 @@
 
 leap_ranges = Array(
   Array(
-    Array(-250,100),
-    Array(70,550),
-    Array(-100,250)
+    Array(-250,-70),
+    Array(50,500),
+    Array(-100,200)
     ),
   Array(
-    Array(-350,270),
-    Array(40,550),
-    Array(-80,250)
+    Array(40,300),
+    Array(50,500),
+    Array(-100,200)
     )
   );
 
@@ -64,9 +64,19 @@ board.on('ready', function() {
             // extract centre palm position in mm [x,y,z]
             palm[0] = frame.hands[0].palmPosition;
             palm[1]  = frame.hands[1].palmPosition;
+
+            // make sure the 0th palm is always the left one
+            if (palm[1][0] < (palm[0][0])) {
+              var newpalm = Array();
+              newpalm[1]=palm[0];
+              newpalm[0]=palm[1];
+              palm=newpalm;
+            }
             // map x,y,z positions of leap to servos
-            //console.log("input",palm[0]);
             //console.log("output", palm[0].map(1,2))
+            //console.log("left:", palm[0][2]);
+            //console.log("right:", palm[1][2]);
+
             for (hand=0; hand<2; hand++) {
               for (axis=0; axis<3; axis++) {
                 servos[hand][axis].to(palm[hand][axis].map(hand,axis));
