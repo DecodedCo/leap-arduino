@@ -11,7 +11,7 @@
     "url": "git@git.decoded.co:amadeuspzs/leapmotion-arduino.git"
   },
   "author": "",
-  "license": "ISC",
+  "license": "MPL-2.0",
   "dependencies": {
     "johnny-five": "^0.8.8",
     "serialport": "^1.4.6",
